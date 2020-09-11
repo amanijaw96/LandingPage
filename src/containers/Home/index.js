@@ -1,5 +1,10 @@
 import React from "react";
+import { HeroBox } from "./styled";
 
 export default function Home(props) {
-  return <div></div>;
+  return (
+    <div>
+      <HeroBox></HeroBox>
+    </div>
+  );
 }

@@ -8,6 +8,8 @@ import {
 } from "react-router-dom";
 import Loading from "./components/Loading/Loading";
 import "font-awesome/css/font-awesome.min.css";
+import "bootstrap/dist/css/bootstrap.css";
+import MyNavBar from "./components/NavBar/index";
 
 const Home = React.lazy(() => import("./containers/Home/index"));
 
@@ -16,7 +18,8 @@ function App() {
     <Route
       {...rest}
       render={(props) => (
-        <div className="container-fluid" style={{ minWidth: 320 }}>
+        <div style={{ minWidth: 320 }}>
+          <MyNavBar></MyNavBar>
           <Component {...props} />
         </div>
       )}
