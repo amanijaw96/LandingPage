@@ -1,24 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
+import Loading from "./components/Loading/Loading";
+import "font-awesome/css/font-awesome.min.css";
+
+const Home = React.lazy(() => import("./containers/Home/index"));
 
 function App() {
+  const RestrictedRoute = ({ component: Component, isLoggedIn, ...rest }) => (
+    <Route
+      {...rest}
+      render={(props) => (
+        <div className="container-fluid" style={{ minWidth: 320 }}>
+          <Component {...props} />
+        </div>
+      )}
+    />
+  );
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Switch>
+          <React.Suspense fallback={<Loading />}>
+            <RestrictedRoute path="/" exact={true} component={Home} />
+          </React.Suspense>
+        </Switch>
+      </Router>
     </div>
   );
 }
