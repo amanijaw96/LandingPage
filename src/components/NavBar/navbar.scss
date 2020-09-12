@@ -1,0 +1,21 @@
+@import "../../assets/variables.scss";
+
+.Logo {
+  background-color: #ffffff;
+  color: black;
+  border: none;
+}
+
+.logo:hover {
+  background-color: #ffffff !important;
+  color: black;
+}
+
+.userIcon {
+  background-color: $color-primary;
+  border-radius: 20px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin-left: 20px;
+}

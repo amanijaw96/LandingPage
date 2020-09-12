@@ -1,0 +1,19 @@
+@import "../../../assets/variables.scss";
+
+.trends {
+}
+.title {
+  font-size: 20px;
+}
+.dot {
+  color: $color-primary;
+}
+.priceBox {
+  border-left: 1px solid $color-grey;
+  padding-left: 15px;
+}
+.profileImage {
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+}
