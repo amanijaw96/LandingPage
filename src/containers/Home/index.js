@@ -116,9 +116,24 @@ export default function Home(props) {
       <HeroBox></HeroBox>
       <div className="container mt-5 mb-5">
         <div className="row">
+          <div className="col-12 text-left mb-2">
+            <span className="title"> Trends</span>
+            <span className="dot ml-2" style={{ fontSize: 30 }}>
+              .
+            </span>
+          </div>
+          <div className="col-12 text-left mb-4 d-flex flex-row justify-content-between align-items-center">
+            <h3 className="font-weight-bold">
+              Check out some of the most popular packages
+            </h3>
+            <span className="ViewAll font-weight-bold">
+              <span>{"View all"} </span>
+              <i className="ml-2 fa fa-angle-right"></i>
+            </span>
+          </div>
           {trends.map((trend) => {
             return (
-              <div className="col-lg-4">
+              <div className="col-4">
                 <Trends trend={trend}></Trends>
               </div>
             );

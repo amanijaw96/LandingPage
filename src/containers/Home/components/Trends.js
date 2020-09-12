@@ -59,7 +59,7 @@ export default function Trends(props) {
         })}
       </Carousel>
       <div className="p-3 text-left">
-        <p className="title text-left mt-2 font-weight-bold mb-1">
+        <p className="title text-left mt-2 font-weight-bold mb-1 ">
           {props.trend.title}
         </p>
         {renderInfo(props.trend.Information)}
@@ -78,16 +78,16 @@ export default function Trends(props) {
             return renderdata(data);
           })}
         </div>
-        <div className="d-flex justify-content-between align-items-center">
+        <div className="d-flex justify-content-between align-items-center mt-5 pb-2">
           <div className="d-flex align-items-center">
-            <div className="profileImage mt-4">
+            <div className="profileImage ">
               <img
                 src={props.trend.User.image}
                 alt="profile"
                 className="profileImage w-100 h-100"
               />
             </div>
-            <div className="d-flex flex-column ml-3 mt-4">
+            <div className="d-flex flex-column ml-3 ">
               <span className="font-weight-bold">
                 {props.trend.User.firstName}
               </span>
@@ -95,8 +95,8 @@ export default function Trends(props) {
             </div>
           </div>
 
-          <div className="d-flex flex-column ml-3 mt-4 priceBox">
-            <span>from</span>
+          <div className="d-flex flex-column ml-3 priceBox">
+            <span>From</span>
             <span className="font-weight-bold">{props.trend.price}</span>
           </div>
         </div>
