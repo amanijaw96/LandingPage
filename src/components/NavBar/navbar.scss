@@ -27,4 +27,8 @@
 .navbar-dark .navbar-toggler {
   border: none;
   display: inline;
+  outline: none;
+}
+.navbar-collapse {
+  transition: all 0.5s ease;
 }
