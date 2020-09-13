@@ -16,7 +16,7 @@ const renderInputs = (label, placeholder) => {
 export default function Search(props) {
   return (
     <div
-      className=" SearchContainer container mt-4 pl-0 pr-0"
+      className=" SearchContainer container mt-5 pl-0 pr-0"
       style={{ maxHeight: 102, overflow: "auto" }}
     >
       <div className="col-12 flex-md-row  card SearchBox d-flex">

@@ -1,5 +1,4 @@
 @import "../../../assets/variables.scss";
-
 .trends {
 }
 .title {
@@ -17,12 +16,18 @@
   width: 60px;
   border-radius: 50px;
 }
-.ViewAll {
-  color: $color-primary;
-  cursor: pointer;
-}
 
 .scrollRow::-webkit-scrollbar {
-  width: 0px;
+  width: 1px;
   background: transparent;
+}
+
+.scrollRow::-webkit-scrollbar-thumb {
+  background: rgba(0, 128, 15, 0.1);
+}
+
+@media screen and (max-width: 992px) {
+  .scrollRow::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
 }

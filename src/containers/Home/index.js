@@ -125,7 +125,7 @@ export default function Home(props) {
             Dont waste hours searching generic holiday sites,we'll help you
             create the perfect stay hassle free.
           </p>
-          <Tabs className="mt-5 mb-4"></Tabs>
+          <Tabs className="mt-5"></Tabs>
           <Search></Search>
         </div>
       </HeroBox>
@@ -137,8 +137,8 @@ export default function Home(props) {
               .
             </span>
           </div>
-          <div className="col-12 text-left mb-4 d-flex flex-row justify-content-between align-items-center">
-            <h3 className="font-weight-bold">
+          <div className="col-12 text-left mb-4 d-flex flex-md-row flex-column justify-content-md-between align-md-items-center align-items-start">
+            <h3 className="TrendingTitle font-weight-bold">
               Check out some of the most popular packages
             </h3>
             <span className="ViewAll font-weight-bold">
@@ -147,7 +147,7 @@ export default function Home(props) {
             </span>
           </div>
           <div
-            className="row pl-5 pl-md-0 pl-md-4 scrollRow"
+            className="col-12 pl-4 pl-md-0 pl-md-4 scrollRow"
             style={{ overflow: "auto" }}
           >
             <div className="row" style={{ width: "100%", minWidth: 1115 }}>
