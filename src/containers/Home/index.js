@@ -1,6 +1,9 @@
 import React from "react";
 import { HeroBox } from "./styled";
 import Trends from "./components/Trends";
+import Search from "./components/Search";
+import "./Home_scss.scss";
+import Tabs from "./components/Tabs";
 
 export default function Home(props) {
   const [trends, setTrends] = React.useState([
@@ -113,7 +116,19 @@ export default function Home(props) {
 
   return (
     <div>
-      <HeroBox></HeroBox>
+      <HeroBox>
+        <div className="container mt-5 pt-5">
+          <h1 className="HeroText text-left pb-3">
+            Stays tailored to your every need
+          </h1>
+          <p className="HeroSubText text-left  pb-3 mb-5">
+            Dont waste hours searching generic holiday sites,we'll help you
+            create the perfect stay hassle free.
+          </p>
+          <Tabs></Tabs>
+          <Search></Search>
+        </div>
+      </HeroBox>
       <div className="container mt-5 mb-5">
         <div className="row">
           <div className="col-12 text-left mb-2">
@@ -131,7 +146,10 @@ export default function Home(props) {
               <i className="ml-2 fa fa-angle-right"></i>
             </span>
           </div>
-          <div className="row p-5 scrollRow" style={{ overflow: "auto" }}>
+          <div
+            className="row pl-5 pl-md-0 pl-md-4 scrollRow"
+            style={{ overflow: "auto" }}
+          >
             <div className="row" style={{ width: "100%", minWidth: 1115 }}>
               {trends.map((trend) => {
                 return (

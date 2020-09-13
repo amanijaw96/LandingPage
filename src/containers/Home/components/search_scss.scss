@@ -1,0 +1,30 @@
+@import "../../../assets/variables.scss";
+
+.SearchBox {
+  min-height: 100px;
+}
+
+.CustomSearchInput {
+  border: none;
+}
+
+.CustomSearchInput:focus {
+  outline: none !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.CustomSearchInputLabel {
+  text-align: left;
+}
+
+.SearchInputWrapper {
+  border-right: 1px solid #e8e8e8;
+  flex: 1;
+}
+
+.CustomButton {
+  background-color: $color-primary;
+  color: white;
+  height: 50px;
+  width: 168px;
+}

@@ -11,18 +11,19 @@ import "./navbar.scss";
 
 export default function MyNavBar() {
   return (
-    <Navbar variant="dark" expand="lg" sticky="top">
+    <Navbar variant="dark" expand="lg">
       <div className="container">
         <Navbar.Brand href="/">
           <button className="pl-5 pr-5 pt-2 pb-2 Logo">Logo</button>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Navbar.Text style={{ color: "#ffffff" }}>Login</Navbar.Text>
-          <div className="userIcon">
+          <div className="userIcon mr-3">
             <i className="fa fa-user" style={{ color: "#ffffff" }}></i>
           </div>
         </Navbar.Collapse>
+        <div className="break mr-3"></div>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
       </div>
     </Navbar>
   );
