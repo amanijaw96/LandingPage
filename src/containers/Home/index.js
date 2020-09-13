@@ -147,10 +147,10 @@ export default function Home(props) {
             </span>
           </div>
           <div
-            className="col-12 pl-4 pl-md-0 pl-md-4 scrollRow"
+            className="col-12 pl-4 pl-lg-3 pr-lg-3 scrollRow"
             style={{ overflow: "auto" }}
           >
-            <div className="row" style={{ width: "100%", minWidth: 1115 }}>
+            <div className="row" style={{ minWidth: 1115 }}>
               {trends.map((trend) => {
                 return (
                   <div className="col-4">

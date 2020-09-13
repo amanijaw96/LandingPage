@@ -18,7 +18,7 @@ function App() {
     <Route
       {...rest}
       render={(props) => (
-        <div style={{ minWidth: 320 }}>
+        <div style={{ minWidth: 375 }}>
           <MyNavBar></MyNavBar>
           <Component {...props} />
         </div>

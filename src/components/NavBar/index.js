@@ -24,13 +24,13 @@ export default function MyNavBar() {
     <Navbar
       variant="dark"
       expand="lg"
-      bg={screenSize < 1200 && expanded ? "dark" : ""}
+      bg={screenSize <= 992 && expanded ? "dark" : ""}
     >
       <div className="container align-items-start d-flex">
         <Navbar.Brand href="/">
           <button className="pl-5 pr-5 pt-2 pb-2 Logo">Logo</button>
         </Navbar.Brand>
-        {screenSize < 1200 ? (
+        {screenSize < 992 ? (
           <Navbar.Toggle
             aria-controls="basic-navbar-nav"
             onClick={() => setExpanded((curr) => !curr)}
@@ -46,7 +46,7 @@ export default function MyNavBar() {
           </div>
         </Navbar.Collapse>
         <div className="break mr-3 d-none d-md-inline"></div>
-        {screenSize > 1200 ? (
+        {screenSize >= 992 ? (
           <Navbar.Toggle
             aria-controls="basic-navbar-nav"
             onClick={() => setExpanded((curr) => !curr)}
