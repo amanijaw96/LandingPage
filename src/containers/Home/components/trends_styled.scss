@@ -21,3 +21,8 @@
   color: $color-primary;
   cursor: pointer;
 }
+
+.scrollRow::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}

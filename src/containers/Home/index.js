@@ -131,13 +131,17 @@ export default function Home(props) {
               <i className="ml-2 fa fa-angle-right"></i>
             </span>
           </div>
-          {trends.map((trend) => {
-            return (
-              <div className="col-4">
-                <Trends trend={trend}></Trends>
-              </div>
-            );
-          })}
+          <div className="row p-5 scrollRow" style={{ overflow: "auto" }}>
+            <div className="row" style={{ width: "100%", minWidth: 1115 }}>
+              {trends.map((trend) => {
+                return (
+                  <div className="col-4">
+                    <Trends trend={trend}></Trends>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         </div>
       </div>
     </div>
