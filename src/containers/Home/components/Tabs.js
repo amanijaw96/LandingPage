@@ -1,10 +1,10 @@
 import React from "react";
 import "./Tabs.scss";
 
-export default function Tabs() {
+export default function Tabs(props) {
   const [active, setActive] = React.useState(0);
   return (
-    <div className="d-flex">
+    <div className="d-flex" {...props}>
       <span
         className={
           active === 0

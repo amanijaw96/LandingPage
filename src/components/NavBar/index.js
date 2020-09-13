@@ -22,7 +22,7 @@ export default function MyNavBar() {
             <i className="fa fa-user" style={{ color: "#ffffff" }}></i>
           </div>
         </Navbar.Collapse>
-        <div className="break mr-3"></div>
+        <div className="break mr-3 d-none d-md-inline"></div>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
       </div>
     </Navbar>

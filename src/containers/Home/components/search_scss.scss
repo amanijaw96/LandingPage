@@ -4,6 +4,10 @@
   min-height: 100px;
 }
 
+.SearchContainer::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
 .CustomSearchInput {
   border: none;
 }
@@ -27,4 +31,14 @@
   color: white;
   height: 50px;
   width: 168px;
+}
+
+// less than meduim
+@media screen and (max-width: 992px) {
+  .SearchInputWrapper {
+    border-bottom: 1px solid #e8e8e8;
+    border-right: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }

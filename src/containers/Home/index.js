@@ -121,11 +121,11 @@ export default function Home(props) {
           <h1 className="HeroText text-left pb-3">
             Stays tailored to your every need
           </h1>
-          <p className="HeroSubText text-left  pb-3 mb-5">
+          <p className="HeroSubText text-left  pb-3 mb-5 d-none d-md-inline">
             Dont waste hours searching generic holiday sites,we'll help you
             create the perfect stay hassle free.
           </p>
-          <Tabs></Tabs>
+          <Tabs className="mt-5 mb-4"></Tabs>
           <Search></Search>
         </div>
       </HeroBox>
